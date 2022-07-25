@@ -27,9 +27,6 @@ jobs:
       run: go get -u github.com/derekparker/delve/cmd/dlv
       
     - name: Build
-      run: go-bindata -pkg=foundation -o=foundation/bindata.go mapping/... config/...
-      
-    - name: Build
       run: go generate
       
     - name: Build
